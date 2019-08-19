@@ -1,3 +1,4 @@
+var fs = require("fs");
 var formidable = require("formidable");
 
 exports.upload = function(request, response) {
@@ -11,8 +12,6 @@ exports.upload = function(request, response) {
     response.end();
   });
 };
-
-var fs = require("fs");
 
 exports.welcome = function(request, response) {
   console.log("Rozpoczynam obsługę żądania welcome.");
